@@ -361,6 +361,8 @@ const person3 = {};
     Add public methods: setPassword(), validatePassword(input)
     The password should not be directly accessible from outside
     Add validation rules (minimum 8 characters)
+
+    Note: if yung constructor is written like 'this.#password', private field siya. Sorry ngayon ko lang din nalaman hehe
 */
 
 /* --------------------------------------------- 5 --------------------------------------------- */
@@ -401,34 +403,6 @@ const person3 = {};
 /* --------------------------------------------- 6 --------------------------------------------- */
 
 /*
-    Create a User class with private field #password
-    Add public methods: setPassword(), validatePassword(input)
-    The password should not be directly accessible from outside
-    Add validation rules (minimum 8 characters)
-*/
-
-/* --------------------------------------------- 6 --------------------------------------------- */
-
-
-
-/* --------------------------------------------- 7 --------------------------------------------- */
-
-/*
-    Create a User class with private field #password
-    Add public methods: setPassword(), validatePassword(input)
-    The password should not be directly accessible from outside
-    Add validation rules (minimum 8 characters)
-
-    Note: if yung constructor is written like 'this.#password', private field siya. Sorry ngayon ko lang din nalaman hehe
-*/
-
-/* --------------------------------------------- 7 --------------------------------------------- */
-
-
-
-/* --------------------------------------------- 8 --------------------------------------------- */
-
-/*
     Create a Vehicle class with properties: brand, model, year
     Add a method getInfo()
     Create a Car class that extends Vehicle
@@ -449,6 +423,34 @@ const person3 = {};
         }
 */
 
+/* --------------------------------------------- 6 --------------------------------------------- */
+
+
+
+/* --------------------------------------------- 7 --------------------------------------------- */
+
+/*
+    Create an Animal class with a method makeSound()
+    Create Dog, Cat, and Bird classes that extend Animal
+    Override makeSound() in each subclass with appropriate sounds
+    Create an array of different animals and call their methods
+
+*/
+
+/* --------------------------------------------- 7 --------------------------------------------- */
+
+
+
+/* --------------------------------------------- 8 --------------------------------------------- */
+
+/*
+    Create a Rectangle class with properties: width, height
+    Add a method getArea() that calculates and returns the area (width × height)
+    Add a method getPerimeter() that calculates and returns the perimeter (2 × (width + height))
+    Add a method isSquare() that returns true if width equals height, false otherwise
+    Create several rectangles and test all methods
+*/
+
 /* --------------------------------------------- 8 --------------------------------------------- */
 
 
@@ -456,12 +458,13 @@ const person3 = {};
 /* --------------------------------------------- 9 --------------------------------------------- */
 
 /*
-    Create a Vehicle class with properties: brand, model, year
-    Add a method getInfo()
-    Create a Car class that extends Vehicle
-    Add additional properties: doors, fuelType
-    Override getInfo() to include car-specific details
-    Use super appropriately
+    Create a Counter class with a property: count
+    Initialize count to 0 in the constructor (or allow an optional starting value)
+    Add a method increment() that increases count by 1
+    Add a method decrement() that decreases count by 1
+    Add a method reset() that sets count back to 0 (or the starting value)
+    Add a method getValue() that returns the current count
+    Optional: Add incrementBy(amount) and decrementBy(amount) methods
 */
 
 /* --------------------------------------------- 9 --------------------------------------------- */
@@ -471,10 +474,11 @@ const person3 = {};
 /* --------------------------------------------- 10 --------------------------------------------- */
 
 /*
-    Create an Animal class with a method makeSound()
-    Create Dog, Cat, and Bird classes that extend Animal
-    Override makeSound() in each subclass with appropriate sounds
-    Create an array of different animals and call their methods
+    Create a Rectangle class with properties: width, height
+    Add a method getArea() that calculates and returns the area (width × height)
+    Add a method getPerimeter() that calculates and returns the perimeter (2 × (width + height))
+    Add a method isSquare() that returns true if width equals height, false otherwise
+    Create several rectangles and test all methods
 */
 
 /* --------------------------------------------- 10 --------------------------------------------- */
