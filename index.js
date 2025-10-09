@@ -361,22 +361,21 @@ const person3 = {};
     Add public methods: setPassword(), validatePassword(input)
     The password should not be directly accessible from outside
     Add validation rules (minimum 8 characters)
-
-    Note: if yung constructor is written like 'this.#password', private field siya. Sorry ngayon ko lang din nalaman hehe
 */
 
 /* --------------------------------------------- 5 --------------------------------------------- */
 
-    class User {
+    class User1 {
     #password;
 
-    constructor(username) {
+    constructor(username, password = "") {
         this.username = username;
+        this.#password = password;
     }
 
     setPassword(newPassword) {
         if (newPassword.length < 8) {
-        console.log("Password must be at least 8 characters long.");
+            console.log("Password must be at least 8 characters long.");
         } else {
             this.#password = newPassword;
             console.log("Password set successfully.");
@@ -394,10 +393,9 @@ const person3 = {};
     }
     }
 
-    const user1 = new User("anselle");
-    user1.setPassword("12345");
+    const user1 = new User1("anselle");
+
     user1.setPassword("mySecret123");
-    user1.validatePassword("wrong");
     user1.validatePassword("mySecret123");
 
 /* --------------------------------------------- 6 --------------------------------------------- */
@@ -425,7 +423,35 @@ const person3 = {};
 
 /* --------------------------------------------- 6 --------------------------------------------- */
 
+    // class Vehicle {
+    // constructor(brand, model, year) {
+    //     this.brand = brand;
+    //     this.model = model;
+    //     this.year = year;
+    // }
 
+    // getInfo() {
+    //     return `Vehicle Info: ${this.brand} ${this.model} (${this.year})`;
+    // }
+    // }
+
+    // class Car extends Vehicle {
+    // constructor(brand, model, year, doors, fuelType) {
+    //     super(brand, model, year);
+    //     this.doors = doors;
+    //     this.fuelType = fuelType;
+    // }
+
+    // getInfo() {
+    //     return `${super.getInfo()} | Doors: ${this.doors}, Fuel Type: ${this.fuelType}`;
+    // }
+    // }
+
+    // const car1 = new Car("Toyota", "Corolla", 2022, 4, "Gasoline");
+    // const car2 = new Car("Tesla", "Model 3", 2023, 4, "Electric");
+
+    // console.log(car1.getInfo());
+    // console.log(car2.getInfo());
 
 /* --------------------------------------------- 7 --------------------------------------------- */
 
@@ -434,51 +460,117 @@ const person3 = {};
     Create Dog, Cat, and Bird classes that extend Animal
     Override makeSound() in each subclass with appropriate sounds
     Create an array of different animals and call their methods
-
 */
 
 /* --------------------------------------------- 7 --------------------------------------------- */
 
+    // class Animal {
+    // makeSound() {
+    //     return "Animal sound";
+    // }
+    // }
 
+    // class Dog extends Animal {
+    // makeSound() {
+    //     return "Arf!";
+    // }
+    // }
+
+    // class Cat extends Animal {
+    // makeSound() {
+    //     return "Meow!";
+    // }
+    // }
+
+    // class Bird extends Animal {
+    // makeSound() {
+    //     return "Tweet!";
+    // }
+    // }
+
+    // const dog = new Dog();
+    // const cat = new Cat();
+    // const bird = new Bird();
+
+    // console.log("Dog:", dog.makeSound());
+    // console.log("Cat:", cat.makeSound());
+    // console.log("Bird:", bird.makeSound());
 
 /* --------------------------------------------- 8 --------------------------------------------- */
 
 /*
-    Create a Rectangle class with properties: width, height
-    Add a method getArea() that calculates and returns the area (width × height)
-    Add a method getPerimeter() that calculates and returns the perimeter (2 × (width + height))
-    Add a method isSquare() that returns true if width equals height, false otherwise
-    Create several rectangles and test all methods
+    Create a Vehicle class with properties: brand, model, year
+    Add a method getInfo()
+    Create a Car class that extends Vehicle
+    Add additional properties: doors, fuelType
+    Override getInfo() to include car-specific details
+    Use super appropriately
+
+    Note: override means, ire-redefine mo lang si method :)
+    Example:
+        @Parent Class
+        intro() {
+            return `Hi, I am ${this.name}`;
+        }
+
+        @Child Class
+        intro() {
+            return `Hello, I am ${this.age}`;
+        }
 */
 
 /* --------------------------------------------- 8 --------------------------------------------- */
 
-
+// HEHHEHHEHEHE SAME LANG ATA po ito
 
 /* --------------------------------------------- 9 --------------------------------------------- */
 
 /*
-    Create a Counter class with a property: count
-    Initialize count to 0 in the constructor (or allow an optional starting value)
-    Add a method increment() that increases count by 1
-    Add a method decrement() that decreases count by 1
-    Add a method reset() that sets count back to 0 (or the starting value)
-    Add a method getValue() that returns the current count
-    Optional: Add incrementBy(amount) and decrementBy(amount) methods
+    Create a Vehicle class with properties: brand, model, year
+    Add a method getInfo()
+    Create a Car class that extends Vehicle
+    Add additional properties: doors, fuelType
+    Override getInfo() to include car-specific details
+    Use super appropriately
 */
 
 /* --------------------------------------------- 9 --------------------------------------------- */
 
+    class Vehicle {
+    constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+
+    getInfo() {
+        return `${this.brand} ${this.model} (${this.year})`;
+    }
+    }
+
+    class Car extends Vehicle {
+    constructor(brand, model, year, doors, fuelType) {
+        super(brand, model, year);
+        this.doors = doors;
+        this.fuelType = fuelType;
+    }
+
+    getInfo() {
+        return `${super.getInfo()} - ${this.doors} doors, ${this.fuelType} engine`;
+    }
+    }
+
+    const car1 = new Car("Toyota", "Vios", 2022, 4, "Gasoline");
+    console.log(car1.getInfo());
 
 
 /* --------------------------------------------- 10 --------------------------------------------- */
 
 /*
-    Create a Rectangle class with properties: width, height
-    Add a method getArea() that calculates and returns the area (width × height)
-    Add a method getPerimeter() that calculates and returns the perimeter (2 × (width + height))
-    Add a method isSquare() that returns true if width equals height, false otherwise
-    Create several rectangles and test all methods
+    Create an Animal class with a method makeSound()
+    Create Dog, Cat, and Bird classes that extend Animal
+    Override makeSound() in each subclass with appropriate sounds
+    Create an array of different animals and call their methods
 */
 
 /* --------------------------------------------- 10 --------------------------------------------- */
