@@ -219,7 +219,7 @@ const person3 = {};
     // }
 
     // const person1 = new Person("Kristine", 22, "kristine@example.com");
-    // const person2 = new Person("Anselle", 22, "anselle@example.com");
+    // const person2 = new Person("Anselle", 23, "anselle@example.com");
     // const person3 = new Person("Kirk", 25, "kirk@example.com");
 
     // console.log(person1.introduce());
@@ -290,27 +290,27 @@ const person3 = {};
 
 /* --------------------------------------------- 3 --------------------------------------------- */
 
-    class Temperature {
-        constructor(celsius) {
-            this.celsius = celsius;
-        }
-    get fahrenheit() {
-        return (this.celsius * 9 / 5) + 32;
-        }
-    set fahrenheit(value) {
-        this.celsius = (value - 32) * 5 / 9;
-        }
+    // class Temperature {
+    //     constructor(celsius) {
+    //         this.celsius = celsius;
+    //     }
+    // get fahrenheit() {
+    //     return (this.celsius * 9 / 5) + 32;
+    //     }
+    // set fahrenheit(value) {
+    //     this.celsius = (value - 32) * 5 / 9;
+    //     }
 
-    display() {
-        console.log(`Temperature: ${this.celsius.toFixed(2)}°C / ${this.fahrenheit.toFixed(2)}°F`);
-        }
-    }
+    // display() {
+    //     console.log(`Temperature: ${this.celsius.toFixed(2)}°C | ${this.fahrenheit.toFixed(2)}°F`);
+    //     }
+    // }
 
-    const temp = new Temperature(25);
-    temp.display();
+    // const temp = new Temperature(25);
+    // temp.display();
 
-    temp.fahrenheit = 100;
-    temp.display(); 
+    // temp.fahrenheit = 100;
+    // temp.display(); 
 
 /* --------------------------------------------- 4 --------------------------------------------- */
 
@@ -321,34 +321,34 @@ const person3 = {};
     Call these without creating an instance
 */
 
-    class Calculator {
-        static PI = 3.14159;
-        static add(a, b) {
-            return a + b;
-         }
-        static subtract(a, b) {
-            return a - b;
-        }
-        static multiply(a, b) {
-            return a * b;
-        }
-        static divide(a, b) {
-            if (b == 0) {
-            return "Error: Cannot divide by zero!";
-            }
-            return a / b;
-        }
-        static circleArea(radius) {
-            return this.PI * radius * radius;
-        }
-    }
+    // class Calculator {
+    //     static PI = 3.14159;
+    //     static add(a, b) {
+    //         return a + b;
+    //      }
+    //     static subtract(a, b) {
+    //         return a - b;
+    //     }
+    //     static multiply(a, b) {
+    //         return a * b;
+    //     }
+    //     static divide(a, b) {
+    //         if (b == 0) {
+    //         return "Error: Cannot divide by zero!";
+    //         }
+    //         return a / b;
+    //     }
+    //     static circleArea(radius) {
+    //         return this.PI * radius * radius;
+    //     }
+    // }
 
-    console.log("Add:", Calculator.add(10, 5));
-    console.log("Subtract:", Calculator.subtract(10, 5));
-    console.log("Multiply:", Calculator.multiply(10, 5));
-    console.log("Divide:", Calculator.divide(10, 5));
-    console.log("PI:", Calculator.PI);
-    console.log("Area of circle (r=3):", Calculator.circleArea(3));
+    // console.log("Add:", Calculator.add(10, 5));
+    // console.log("Subtract:", Calculator.subtract(10, 5));
+    // console.log("Multiply:", Calculator.multiply(10, 5));
+    // console.log("Divide:", Calculator.divide(10, 5));
+    // console.log("PI:", Calculator.PI);
+    // console.log("Area of circle:", Calculator.circleArea(6));
 
 /* --------------------------------------------- 4 --------------------------------------------- */
 
@@ -365,38 +365,38 @@ const person3 = {};
 
 /* --------------------------------------------- 5 --------------------------------------------- */
 
-    class User1 {
-    #password;
+    // class User1 {
+    // #password;
 
-    constructor(username, password = "") {
-        this.username = username;
-        this.#password = password;
-    }
+    // constructor(username, password = "") {
+    //     this.username = username;
+    //     this.#password = password;
+    // }
 
-    setPassword(newPassword) {
-        if (newPassword.length < 8) {
-            console.log("Password must be at least 8 characters long.");
-        } else {
-            this.#password = newPassword;
-            console.log("Password set successfully.");
-        }
-    }
+    // setPassword(newPassword) {
+    //     if (newPassword.length < 8) {
+    //         console.log("Password must be at least 8 characters long.");
+    //     } else {
+    //         this.#password = newPassword;
+    //         console.log("Password set successfully.");
+    //     }
+    // }
 
-    validatePassword(input) {
-        if (input == this.#password) {
-            console.log("Access granted.");
-            return true;
-        } else {
-            console.log("Invalid password.");
-            return false;
-        }
-    }
-    }
+    // validatePassword(input) {
+    //     if (input == this.#password) {
+    //         console.log("Access granted.");
+    //         return true;
+    //     } else {
+    //         console.log("Invalid password.");
+    //         return false;
+    //     }
+    // }
+    // }
 
-    const user1 = new User1("anselle");
+    // const user1 = new User1("anselle");
 
-    user1.setPassword("mySecret123");
-    user1.validatePassword("mySecret123");
+    // user1.setPassword("mySecret123");
+    // user1.validatePassword("mySecret123");
 
 /* --------------------------------------------- 6 --------------------------------------------- */
 
@@ -467,7 +467,7 @@ const person3 = {};
     // class Animal {
     // makeSound() {
     //     return "Animal sound";
-    // }
+    //      }
     // }
 
     // class Dog extends Animal {
@@ -511,7 +511,62 @@ const person3 = {};
 
 /* --------------------------------------------- 8 --------------------------------------------- */
 
-// HEHHEHHEHEHE SAME LANG ATA po ito
+    // class Student {
+    // constructor(name, gradeLevel) {
+    //     this.name = name;
+    //     this.gradeLevel = gradeLevel;
+    //     this.scores = [];
+    //     }
+    // addScore(score) {
+    //     this.scores.push(score);
+    //     }
+    // getAverage() {
+    // if (this.scores.length == 0) return 0;
+    //     const total = this.scores.reduce(function(sum, score) {
+    //         return sum + score;
+    //     }, 0);
+
+    //     return total / this.scores.length;
+    //     }
+    // getHighestScore() {
+    //     return Math.max(...this.scores);
+    //     }
+    // getLowestScore() {
+    //     return Math.min(...this.scores);
+    //     }
+    // hasPassed() {
+    //     return this.getAverage() >= 60;
+    //     }
+    // }
+
+    // const student1 = new Student("Anselle", 22);
+    // const student2 = new Student("Kristine", 22);
+    // const student3 = new Student("Sanchea", 3);
+
+    // student1.addScore(60);
+    // student1.addScore(80);
+    // student2.addScore(90);
+    // student2.addScore(50);
+    // student3.addScore(40);
+    // student3.addScore(50);
+
+    // console.log(`Name: ${student1.name}`);
+    // console.log(`Average: ${student1.getAverage()}`);
+    // console.log(`Highest: ${student1.getHighestScore()}`);
+    // console.log(`Lowest: ${student1.getLowestScore()}`);
+    // console.log(`Passed: ${student1.hasPassed()}`);
+    // console.log("---------------");
+    // console.log(`Name: ${student2.name}`);
+    // console.log(`Average: ${student2.getAverage()}`);
+    // console.log(`Highest: ${student2.getHighestScore()}`);
+    // console.log(`Lowest: ${student2.getLowestScore()}`);
+    // console.log(`Passed: ${student2.hasPassed()}`);
+    // console.log("---------------");
+    // console.log(`Name: ${student3.name}`);
+    // console.log(`Average: ${student3.getAverage()}`);
+    // console.log(`Highest: ${student3.getHighestScore()}`);
+    // console.log(`Lowest: ${student3.getLowestScore()}`);
+    // console.log(`Passed: ${student3.hasPassed()}`);
 
 /* --------------------------------------------- 9 --------------------------------------------- */
 
@@ -529,6 +584,57 @@ const person3 = {};
 
 /* --------------------------------------------- 9 --------------------------------------------- */
 
+    // class Movie {
+    // constructor(title, director, releaseYear) {
+    //     this.title = title;
+    //     this.director = director;
+    //     this.releaseYear = releaseYear;
+    //     this.ratings = [];
+    // }
+
+    // addRating(rating) {
+    //     if (rating >= 1 && rating <= 5) {
+    //     this.ratings.push(rating);
+    //     }
+    // }
+
+    // getAverageRating() {
+    //     if (this.ratings.length == 0) {
+    //     return "No ratings yet";
+    //     }
+    //     let total = 0;
+    //     for (let i = 0; i < this.ratings.length; i++) {
+    //     total += this.ratings[i];
+    //     }
+    //     return (total / this.ratings.length).toFixed(1);
+    // }
+
+    // getRatingCount() {
+    //     return this.ratings.length;
+    // }
+
+    // getSummary() {
+    //     let avg = this.getAverageRating();
+    //     let count = this.getRatingCount();
+    //     if (avg == "No ratings yet") {
+    //     return `${this.title} (${this.releaseYear}) - Directed by ${this.director} - No ratings yet`;
+    //     } else {
+    //     return `${this.title} (${this.releaseYear}) - Directed by ${this.director} - Average Rating: ${avg}/5 (${count} ratings)`;
+    //     }
+    // }
+    // }
+
+    // const movie1 = new Movie("Wonder Woman", "Patty Jenkins", 2017);
+    // movie1.addRating(5);
+    // movie1.addRating(4);
+    // movie1.addRating(3);
+
+    // const movie2 = new Movie("Wonder Woman 1984", "Patty Jenkins", 2021);
+    // movie2.addRating(5);
+    // movie2.addRating(4);
+
+    // console.log(movie1.getSummary());
+    // console.log(movie2.getSummary());
 
 /* --------------------------------------------- 10 --------------------------------------------- */
 
@@ -544,3 +650,35 @@ const person3 = {};
 */
 
 /* --------------------------------------------- 10 --------------------------------------------- */
+
+    // class Counter {
+    // constructor() {
+    //     this.count = 0;
+    // }
+
+    // increment() {
+    //     this.count++;
+    // }
+
+    // decrement() {
+    //     this.count--;
+    // }
+
+    // reset() {
+    //     this.count = 0;
+    // }
+
+    // getValue() {
+    //     return this.count;
+    // }
+    // }
+
+    // const counter = new Counter();
+    // counter.increment();
+    // counter.increment();
+    // counter.increment();
+    // console.log(counter.getValue());
+    // counter.decrement();
+    // console.log(counter.getValue());
+    // counter.reset();
+    // console.log(counter.getValue());
