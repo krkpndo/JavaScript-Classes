@@ -499,24 +499,14 @@ const person3 = {};
 /* --------------------------------------------- 8 --------------------------------------------- */
 
 /*
-    Create a Vehicle class with properties: brand, model, year
-    Add a method getInfo()
-    Create a Car class that extends Vehicle
-    Add additional properties: doors, fuelType
-    Override getInfo() to include car-specific details
-    Use super appropriately
-
-    Note: override means, ire-redefine mo lang si method :)
-    Example:
-        @Parent Class
-        intro() {
-            return `Hi, I am ${this.name}`;
-        }
-
-        @Child Class
-        intro() {
-            return `Hello, I am ${this.age}`;
-        }
+    Create a Student class with properties: name, grade (current grade level like 9, 10, 11, 12), scores (array to store test scores)
+    Initialize scores as an empty array in the constructor
+    Add a method addScore(score) that adds a test score to the scores array
+    Add a method getAverage() that calculates and returns the average of all scores
+    Add a method getHighestScore() that returns the highest score
+    Add a method getLowestScore() that returns the lowest score
+    Add a method hasPassed() that returns true if the average is 60 or above, false otherwise
+    Create multiple students, add scores, and display their statistics
 */
 
 /* --------------------------------------------- 8 --------------------------------------------- */
@@ -526,51 +516,31 @@ const person3 = {};
 /* --------------------------------------------- 9 --------------------------------------------- */
 
 /*
-    Create a Vehicle class with properties: brand, model, year
-    Add a method getInfo()
-    Create a Car class that extends Vehicle
-    Add additional properties: doors, fuelType
-    Override getInfo() to include car-specific details
-    Use super appropriately
+    Create a Movie class with properties: title, director, releaseYear, ratings (array to store user ratings from 1-5)
+    Initialize ratings as an empty array in the constructor
+    Add a method addRating(rating) that adds a rating to the ratings array
+    Add validation: only accept ratings between 1 and 5 (inclusive)
+    Add a method getAverageRating() that calculates and returns the average rating (rounded to 1 decimal place)
+    Add a method getRatingCount() that returns how many ratings the movie has received
+    Add a method getSummary() that returns a string like: "[Title] (Year) - Directed by [Director] - Average Rating: X.X/5.0 (Y ratings)"
+    If no ratings exist, getAverageRating() should return "No ratings yet"
+    Create several movies, add ratings, and display their summaries
 */
 
 /* --------------------------------------------- 9 --------------------------------------------- */
-
-    class Vehicle {
-    constructor(brand, model, year) {
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
-    }
-
-    getInfo() {
-        return `${this.brand} ${this.model} (${this.year})`;
-    }
-    }
-
-    class Car extends Vehicle {
-    constructor(brand, model, year, doors, fuelType) {
-        super(brand, model, year);
-        this.doors = doors;
-        this.fuelType = fuelType;
-    }
-
-    getInfo() {
-        return `${super.getInfo()} - ${this.doors} doors, ${this.fuelType} engine`;
-    }
-    }
-
-    const car1 = new Car("Toyota", "Vios", 2022, 4, "Gasoline");
-    console.log(car1.getInfo());
 
 
 /* --------------------------------------------- 10 --------------------------------------------- */
 
 /*
-    Create an Animal class with a method makeSound()
-    Create Dog, Cat, and Bird classes that extend Animal
-    Override makeSound() in each subclass with appropriate sounds
-    Create an array of different animals and call their methods
+    Create a Counter class with a property: count
+    Initialize count to 0 in the constructor (or allow an optional starting value)
+    Add a method increment() that increases count by 1
+    Add a method decrement() that decreases count by 1
+    Add a method reset() that sets count back to 0 (or the starting value)
+    Add a method getValue() that returns the current count
+    Optional: Add incrementBy(amount) and decrementBy(amount) methods
+    Create multiple counters and test all methods
 */
 
 /* --------------------------------------------- 10 --------------------------------------------- */
