@@ -654,23 +654,23 @@ const person3 = {};
     // class Counter {
     // constructor() {
     //     this.count = 0;
-    // }
+    //  }
 
     // increment() {
     //     this.count++;
-    // }
+    //  }
 
     // decrement() {
     //     this.count--;
-    // }
+    //  }
 
     // reset() {
     //     this.count = 0;
-    // }
+    //  }
 
     // getValue() {
     //     return this.count;
-    // }
+    //  }
     // }
 
     // const counter = new Counter();
