@@ -211,10 +211,9 @@ const person3 = {};
     //         this.name = name;
     //         this.age = age;
     //         this.email = email;
-    // }
-
-    // introduce() {
-    //     return `Hi, I'm ${this.name} and I'm ${this.age} years old.`;
+    //     }
+    //     introduce() {
+    //         return `Hi, I'm ${this.name} and I'm ${this.age} years old.`;
     //     }
     // }
 
@@ -240,28 +239,28 @@ const person3 = {};
 */
 
     // class BankAccount {
-    // constructor(accountNumber, balance) {
-    //     this.accountNumber = accountNumber;
-    //     this.balance = balance;
-    // }
-
-    // deposit(amount) {
-    //     this.balance += amount;
-    //     console.log(`Deposited ₱${amount}. New balance: ₱${this.balance}`);
-    // }
-
-    // withdraw(amount) {
-    //     if (amount > this.balance) {
-    //     console.log(`Withdrawal failed. Insufficient balance in account ${this.accountNumber}.`);
-    //     } else {
-    //     this.balance -= amount;
-    //     console.log(`Withdrew ₱${amount}. Remaining balance: ₱${this.balance}`);
+    //     constructor(accountNumber, balance) {
+    //         this.accountNumber = accountNumber;
+    //         this.balance = balance;
     //     }
-    // }
 
-    // getBalance() {
-    //     return `Account ${this.accountNumber} balance: ₱${this.balance}`;
-    // }
+    //     deposit(amount) {
+    //         this.balance += amount;
+    //         console.log(`Deposited ₱${amount}. New balance: ₱${this.balance}`);
+    //     }
+
+    //     withdraw(amount) {
+    //         if (amount > this.balance) {
+    //             console.log(`Withdrawal failed. Insufficient balance in account ${this.accountNumber}.`);
+    //         } else {
+    //         this.balance -= amount;
+    //             console.log(`Withdrew ₱${amount}. Remaining balance: ₱${this.balance}`);
+    //         }
+    //     }
+
+    //     getBalance() {
+    //         return `Account ${this.accountNumber} balance: ₱${this.balance}`;
+    //     }
     // }
 
     // const acc1 = new BankAccount(1001, 5000);
@@ -294,15 +293,14 @@ const person3 = {};
     //     constructor(celsius) {
     //         this.celsius = celsius;
     //     }
-    // get fahrenheit() {
-    //     return (this.celsius * 9 / 5) + 32;
+    //     get fahrenheit() {
+    //         return (this.celsius * 9 / 5) + 32;
     //     }
-    // set fahrenheit(value) {
-    //     this.celsius = (value - 32) * 5 / 9;
+    //     set fahrenheit(value) {
+    //         this.celsius = (value - 32) * 5 / 9;
     //     }
-
-    // display() {
-    //     console.log(`Temperature: ${this.celsius.toFixed(2)}°C | ${this.fahrenheit.toFixed(2)}°F`);
+    //     display() {
+    //         console.log(`Temperature: ${this.celsius.toFixed(2)}°C | ${this.fahrenheit.toFixed(2)}°F`);
     //     }
     // }
 
@@ -325,7 +323,7 @@ const person3 = {};
     //     static PI = 3.14159;
     //     static add(a, b) {
     //         return a + b;
-    //      }
+    //     }
     //     static subtract(a, b) {
     //         return a - b;
     //     }
@@ -424,27 +422,27 @@ const person3 = {};
 /* --------------------------------------------- 6 --------------------------------------------- */
 
     // class Vehicle {
-    // constructor(brand, model, year) {
-    //     this.brand = brand;
-    //     this.model = model;
-    //     this.year = year;
-    // }
+    //     constructor(brand, model, year) {
+    //         this.brand = brand;
+    //         this.model = model;
+    //         this.year = year;
+    //     }
 
-    // getInfo() {
-    //     return `Vehicle Info: ${this.brand} ${this.model} (${this.year})`;
-    // }
+    //     getInfo() {
+    //         return `Vehicle Info: ${this.brand} ${this.model} (${this.year})`;
+    //     }
     // }
 
     // class Car extends Vehicle {
-    // constructor(brand, model, year, doors, fuelType) {
-    //     super(brand, model, year);
-    //     this.doors = doors;
-    //     this.fuelType = fuelType;
-    // }
+    //     constructor(brand, model, year, doors, fuelType) {
+    //         super(brand, model, year);
+    //         this.doors = doors;
+    //         this.fuelType = fuelType;
+    //     }
 
-    // getInfo() {
-    //     return `${super.getInfo()} | Doors: ${this.doors}, Fuel Type: ${this.fuelType}`;
-    // }
+    //     getInfo() {
+    //         return `${super.getInfo()} | Doors: ${this.doors}, Fuel Type: ${this.fuelType}`;
+    //     }
     // }
 
     // const car1 = new Car("Toyota", "Corolla", 2022, 4, "Gasoline");
@@ -465,27 +463,27 @@ const person3 = {};
 /* --------------------------------------------- 7 --------------------------------------------- */
 
     // class Animal {
-    // makeSound() {
-    //     return "Animal sound";
-    //      }
+    //     makeSound() {
+    //         return "Animal sound";
+    //     }
     // }
 
     // class Dog extends Animal {
-    // makeSound() {
-    //     return "Arf!";
-    // }
+    //     makeSound() {
+    //         return "Arf!";
+    //     }
     // }
 
     // class Cat extends Animal {
-    // makeSound() {
-    //     return "Meow!";
-    // }
+    //     makeSound() {
+    //         return "Meow!";
+    //     }
     // }
 
     // class Bird extends Animal {
-    // makeSound() {
-    //     return "Tweet!";
-    // }
+    //     makeSound() {
+    //         return "Tweet!";
+    //     }
     // }
 
     // const dog = new Dog();
@@ -512,30 +510,31 @@ const person3 = {};
 /* --------------------------------------------- 8 --------------------------------------------- */
 
     // class Student {
-    // constructor(name, gradeLevel) {
-    //     this.name = name;
-    //     this.gradeLevel = gradeLevel;
-    //     this.scores = [];
+    //     constructor(name, gradeLevel) {
+    //         this.name = name;
+    //         this.gradeLevel = gradeLevel;
+    //         this.scores = [];
     //     }
-    // addScore(score) {
-    //     this.scores.push(score);
-    //     }
-    // getAverage() {
-    // if (this.scores.length == 0) return 0;
-    //     const total = this.scores.reduce(function(sum, score) {
-    //         return sum + score;
-    //     }, 0);
 
-    //     return total / this.scores.length;
+    //     addScore(score) {
+    //         this.scores.push(score);
     //     }
-    // getHighestScore() {
-    //     return Math.max(...this.scores);
+    //     getAverage() {
+    //         if (this.scores.length == 0) return 0;
+    //         const total = this.scores.reduce(function(sum, score) {
+    //             return sum + score;
+    //         }, 0);
+
+    //         return total / this.scores.length;
     //     }
-    // getLowestScore() {
-    //     return Math.min(...this.scores);
+    //     getHighestScore() {
+    //         return Math.max(...this.scores);
     //     }
-    // hasPassed() {
-    //     return this.getAverage() >= 60;
+    //     getLowestScore() {
+    //         return Math.min(...this.scores);
+    //     }
+    //     hasPassed() {
+    //         return this.getAverage() >= 60;
     //     }
     // }
 
@@ -585,43 +584,43 @@ const person3 = {};
 /* --------------------------------------------- 9 --------------------------------------------- */
 
     // class Movie {
-    // constructor(title, director, releaseYear) {
-    //     this.title = title;
-    //     this.director = director;
-    //     this.releaseYear = releaseYear;
-    //     this.ratings = [];
-    // }
-
-    // addRating(rating) {
-    //     if (rating >= 1 && rating <= 5) {
-    //     this.ratings.push(rating);
+    //     constructor(title, director, releaseYear) {
+    //         this.title = title;
+    //         this.director = director;
+    //         this.releaseYear = releaseYear;
+    //         this.ratings = [];
     //     }
-    // }
 
-    // getAverageRating() {
-    //     if (this.ratings.length == 0) {
-    //     return "No ratings yet";
+    //     addRating(rating) {
+    //         if (rating >= 1 && rating <= 5) {
+    //         this.ratings.push(rating);
+    //         }
     //     }
-    //     let total = 0;
-    //     for (let i = 0; i < this.ratings.length; i++) {
-    //     total += this.ratings[i];
-    //     }
-    //     return (total / this.ratings.length).toFixed(1);
-    // }
 
-    // getRatingCount() {
-    //     return this.ratings.length;
-    // }
-
-    // getSummary() {
-    //     let avg = this.getAverageRating();
-    //     let count = this.getRatingCount();
-    //     if (avg == "No ratings yet") {
-    //     return `${this.title} (${this.releaseYear}) - Directed by ${this.director} - No ratings yet`;
-    //     } else {
-    //     return `${this.title} (${this.releaseYear}) - Directed by ${this.director} - Average Rating: ${avg}/5 (${count} ratings)`;
+    //     getAverageRating() {
+    //         if (this.ratings.length == 0) {
+    //         return "No ratings yet";
+    //         }
+    //         let total = 0;
+    //         for (let i = 0; i < this.ratings.length; i++) {
+    //         total += this.ratings[i];
+    //         }
+    //         return (total / this.ratings.length).toFixed(1);
     //     }
-    // }
+
+    //     getRatingCount() {
+    //         return this.ratings.length;
+    //     }
+
+    //     getSummary() {
+    //         let avg = this.getAverageRating();
+    //         let count = this.getRatingCount();
+    //         if (avg == "No ratings yet") {
+    //         return `${this.title} (${this.releaseYear}) - Directed by ${this.director} - No ratings yet`;
+    //         } else {
+    //         return `${this.title} (${this.releaseYear}) - Directed by ${this.director} - Average Rating: ${avg}/5 (${count} ratings)`;
+    //         }
+    //     }
     // }
 
     // const movie1 = new Movie("Wonder Woman", "Patty Jenkins", 2017);
@@ -652,25 +651,24 @@ const person3 = {};
 /* --------------------------------------------- 10 --------------------------------------------- */
 
     // class Counter {
-    // constructor() {
-    //     this.count = 0;
-    //  }
+    //     constructor() {
+    //         this.count = 0;
+    //     }
+    //     increment() {
+    //         this.count++;
+    //     }
 
-    // increment() {
-    //     this.count++;
-    //  }
+    //     decrement() {
+    //         this.count--;
+    //     }
 
-    // decrement() {
-    //     this.count--;
-    //  }
+    //     reset() {
+    //         this.count = 0;
+    //     }
 
-    // reset() {
-    //     this.count = 0;
-    //  }
-
-    // getValue() {
-    //     return this.count;
-    //  }
+    //     getValue() {
+    //         return this.count;
+    //     }
     // }
 
     // const counter = new Counter();
