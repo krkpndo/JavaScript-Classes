@@ -682,3 +682,82 @@ const person3 = {};
     // console.log(counter.getValue());
     // counter.reset();
     // console.log(counter.getValue());
+
+/*----------------------------------------------------- START HERE -----------------------------------------------------------------*/
+
+/*    Goal: Apply everything together. */
+
+// Create a function that takes an array of numbers and returns only the even ones.
+
+// function getEvenNumbers(arr) {
+//   return arr.filter(num => num % 2 === 0);
+// }
+
+// console.log(getEvenNumbers([1,6,5,8,2,9]));
+
+// Build a simple calculator (add, subtract, multiply, divide) using functions.
+
+// function add(a, b) {
+//   return a + b;
+// }
+
+// function subtract(a, b) {
+//   return a - b;
+// }
+
+// function multiply(a, b) {
+//   return a * b;
+// }
+
+// function divide(a, b) {
+//   return a / b;
+// }
+
+// console.log(add(5, 3));
+// console.log(subtract(5, 3));
+// console.log(multiply(5, 3));
+// console.log(divide(5, 3));
+
+// Write a program that generates a random number between 1 and 100 and asks the user to guess it.
+
+// let number = Math.floor(Math.random() * 100) + 1;
+// let guess = 0;
+
+// while (guess !== number) {
+//   guess = Number(prompt("Guess a number between 1 and 100:"));
+
+//   if (guess == number) {
+//     alert("Correct! The number was " + number);
+//   } else if (guess < number) {
+//     alert("Too low! Try again!");
+//   } else {
+//     alert("Too high! Try again!");
+//   }
+// }
+
+// Create a program that counts how many words are in a sentence.
+
+// function countWords(sentence) {
+//   let words = sentence.split(" ");
+//   let count = words.length;
+//   console.log("There are " + count + " words in your sentence.");
+// }
+
+// countWords("Meow meow meow");
+
+// Build a program that checks if a word is a palindrome (e.g. “madam”).
+
+// function checkPalindrome(word) {
+//   let reversed = word.split("").reverse().join("");
+
+//   if (word == reversed) {
+//     console.log("It's a palindrome!");
+//   } else {
+//     console.log("It's not a palindrome.");
+//   }
+// }
+
+// checkPalindrome("madam");
+// checkPalindrome("hello");
+
+
