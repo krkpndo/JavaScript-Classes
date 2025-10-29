@@ -688,7 +688,7 @@ const person3 = {};
 // Create a function that takes an array of numbers and returns only the even ones.
 
 // function getEvenNumbers(arr) {
-//   return arr.filter(num => num % 2 === 0);
+//   return arr.filter(num => num % 2 == 0);
 // }
 
 // console.log(getEvenNumbers([1,6,5,8,2,9]));
