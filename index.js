@@ -688,7 +688,7 @@ const person3 = {};
 // Create a function that takes an array of numbers and returns only the even ones.
 
 // function getEvenNumbers(arr) {
-//   return arr.filter(num => num % 2 == 0);
+//   return arr.filter(num => num % 2 == 0).sort();
 // }
 
 // console.log(getEvenNumbers([1,6,5,8,2,9]));
@@ -741,21 +741,22 @@ const person3 = {};
 //   console.log("There are " + count + " words in your sentence.");
 // }
 
-// countWords("Meow meow meow");
+// countWords("I love Programming");
 
 // Build a program that checks if a word is a palindrome (e.g. “madam”).
 
-// function checkPalindrome(word) {
-//   let reversed = word.split("").reverse().join("");
+    // function checkPalindrome(word) {
+    //     let wordToLowerCase = word.toLowerCase();
+        
+    //     let reversed = wordToLowerCase.split("").reverse().join("").toLowerCase();
 
-//   if (word == reversed) {
-//     console.log("It's a palindrome!");
-//   } else {
-//     console.log("It's not a palindrome.");
-//   }
-// }
+    //     if (wordToLowerCase == reversed) {
+    //         console.log("It's a palindrome!");
+    //     } else {
+    //         console.log("It's not a palindrome.");
+    //     }
+    // }
 
 // checkPalindrome("madam");
-// checkPalindrome("hello");
 
 
