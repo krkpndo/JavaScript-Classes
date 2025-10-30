@@ -764,42 +764,97 @@ const person3 = {};
 
 // 1. Write a function that takes a string and returns it reversed
 
-function reverseString(str) {
-    // Your code here
-}
+// function reverseString(str) {
+//     return str.split('').reverse().join('');
+// }
+
+// console.log(reverseString("hello"));
 
 // 2. Write a function that takes an array of numbers and returns the largest one
 
-function findLargest(numbers) {
-    // Your code here
-}
+// function findLargest(numbers) {
+//   let largest = numbers[0];
+
+//     for (let i = 1; i < numbers.length; i++) {
+//         if (numbers[i] > largest) {
+//             largest = numbers[i];
+//         }
+//     }
+
+//     return largest;
+// }
+
+// console.log(findLargest([3, 7, 2, 9, 5]));
 
 // 3. Write a function that counts the number of vowels in a string
 
-function countVowels(str) {
-    // Your code here
-}
+// function countVowels(str) {
+//     let count = 0;
+//     let vowels = "aeiouAEIOU";
+
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.includes(str[i])) {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// console.log(countVowels("Hello World"));
 
 // 4. Write a function that prints numbers 1-100, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz"
 
-function fizzBuzz() {
-    // Your code here
-}
+// function fizzBuzz() {
+//     for (let i = 1; i <= 100; i++) {
+//         if (i % 3 == 0 && i % 5 == 0) {
+//             console.log("FizzBuzz");
+//         } else if (i % 3 == 0) {
+//             console.log("Fizz");
+//         } else if (i % 5 == 0) {
+//             console.log("Buzz");
+//         } else {
+//             console.log(i);
+//         }
+//     }
+// }
+
+// fizzBuzz();
 
 // 6. Write a function that removes duplicate values from an array
 
-function removeDuplicates(arr) {
-    // Your code here
-}
+// function removeDuplicates(arr) {
+//   let unique = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!unique.includes(arr[i])) {
+//       unique.push(arr[i]);
+//     }
+//   }
+//   return unique;
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
 
 // 7. Given an array containing n-1 numbers from 1 to n, find the missing number
 
-function findMissingNumber(arr, n) {
-    // Your code here
-}
+// function findMissingNumber(arr, n) {
+//     let total = (n * (n + 1)) / 2;
+//     let sum = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+
+//     return total - sum;
+// }
+
+// console.log(findMissingNumber([1, 2, 4, 5, 6], 6));
 
 // 8. Write a function that flattens a nested array of any depth
 
-function flattenArray(arr) {
-    // Your code here
-}
+// function flattenArray(arr) {
+//   return arr.flat();
+// }
+
+// console.log(flattenArray([1, [2, 3], 4, [5, 6]]));
