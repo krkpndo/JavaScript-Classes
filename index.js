@@ -760,3 +760,46 @@ const person3 = {};
 // checkPalindrome("madam");
 
 
+/*----------------------------------------------------- START HERE -----------------------------------------------------------------*/
+
+// 1. Write a function that takes a string and returns it reversed
+
+function reverseString(str) {
+    // Your code here
+}
+
+// 2. Write a function that takes an array of numbers and returns the largest one
+
+function findLargest(numbers) {
+    // Your code here
+}
+
+// 3. Write a function that counts the number of vowels in a string
+
+function countVowels(str) {
+    // Your code here
+}
+
+// 4. Write a function that prints numbers 1-100, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz"
+
+function fizzBuzz() {
+    // Your code here
+}
+
+// 6. Write a function that removes duplicate values from an array
+
+function removeDuplicates(arr) {
+    // Your code here
+}
+
+// 7. Given an array containing n-1 numbers from 1 to n, find the missing number
+
+function findMissingNumber(arr, n) {
+    // Your code here
+}
+
+// 8. Write a function that flattens a nested array of any depth
+
+function flattenArray(arr) {
+    // Your code here
+}
