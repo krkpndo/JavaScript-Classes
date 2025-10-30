@@ -784,7 +784,7 @@ const person3 = {};
 //     return largest;
 // }
 
-// console.log(findLargest([3, 7, 2, 9, 5]));
+// console.log(findLargest([3, 7, 2, 6, 5]));
 
 // 3. Write a function that counts the number of vowels in a string
 
@@ -801,7 +801,7 @@ const person3 = {};
 //     return count;
 // }
 
-// console.log(countVowels("Hello World"));
+// console.log(countVowels("Kirk Villapando"));
 
 // 4. Write a function that prints numbers 1-100, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz"
 
